@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d35f49dc21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Developer</p>
+            <h1>Hii, I'm <span>Arun</span><br> From Chennai!...</h1>
+        </div>
+    </div> 
+</div> 
+<!----------------------------------about-------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Profile.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> 🤓 Focus and Objective Driven Person.<br>
+                    🔭 I’m currently working on Face Recognition.<br>
+                    😎 Familiar in C, C++, Java, Python and Front-end.<br>
+                    🌱 I’m currently learning Back-end Development.<br>
+                    💬 Ask me about my Projects.<br>
+                    ⚡ Fun fact! , Binge watching (Anime, Movies and Series).</p>
+
+                    <div class="tab-title">
+                        <P class="tab-links active-link" onclick="opentab('skills')">Skills</P>
+                        <P class="tab-links" onclick="opentab('experience')">Experience</P>
+                        <P class="tab-links" onclick="opentab('education')">Education</P>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Design</span><br>Designing responsive web pages.</li>
+                            <li><span>Embedded</span><br>Working with Arduino, Nodemcu, Raspberry pi.</li>
+                            <li><span>AI/ML</span><br>Face and Gait Analysis using Deep Learning.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Larsen & Toubro</span><br>Intern at NPCI Data Centre cite.</li>
+                            <li><span>Shiash Info Solutions Pvt. Ltd.</span><br>Project Intern, developed Weather App using Django</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span><br>BE. ECE in Sri Sairam Engineering Clg.</li>
+                            <li><span>2018 - 2020</span><br>HSC - Zion Matric. Hr. Sec. School</li>
+                            <li><span>2017 - 2018</span><br>SSLC - Montfort Matric. Hr. Sec. School</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-----------------------------------Services--------------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Proficient in HTML and Strong command of CSS for styling and layout design.JavaScript for interactive and dynamic web elements.</p>
+                <a href="https://www.w3schools.com/html/default.asp">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-keyboard"></i>
+                <h2>Embedded</h2>
+                <p>Experienced with Arduino for microcontroller-based projects.<br>Proficient in NodeMCU for IoT applications and Raspberry Pi for embedded systems.</p>
+                <a href="https://www.tutorialspoint.com/embedded_systems/index.htm">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>AI/ML</h2>
+                <p>Implemented Face, Gait Recognition using deep learning. Applied neural networks and computer vision for successful project outcomes.</p>
+                <a href="https://www.geeksforgeeks.org/machine-learning/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------Protfolio------------------------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Follow Bot</h3>
+                    <p>A human following robot build using Arduino and Sensors like (UV, IR).</p>
+                    <a href="https://github.com/arun2002k/Intelligent_Movement_Tracking_Robot"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>OTP lock</h3>
+                    <p>A smart door lock system based on One time passcode. Build using ardunio and  mobile app for password generation.</p>
+                    <a href="https://github.com/arun2002k/OTP_LOCK"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Face/Gait Analysis</h3>
+                    <p>A Real time Face and Gait patterns Analysis based on deep learning techniques.</p>
+                    <a href="https://github.com/arun2002k/face_detections"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------------Contact------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i> arun68002k@gmail.com</p>
+                <p> <i class="fas fa-phone"></i> +91 73388 45365</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/i_m_arunbala"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/arun-kumar-balasubramaniyan-422136206"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://t.me/AjaxSupreme02"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/arun2002k"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="images/Aruncv.pdf" download class="btn">View Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Arunkumar-2002</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+    var side = document.getElementById("sidemenu");
+
+    function openmenu(){
+        side.style.right = "0";
+    }
+
+    function closemenu(){
+        side.style.right = "-200px";
+    }
+</script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZai8yDA3hrys9yXK6MsisbVoATCBXdKv_tI4vLG6PlEYgraj08JVTLectMLFcJSO1/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully !"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
