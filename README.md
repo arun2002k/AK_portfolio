@@ -1,2 +1,2 @@
 # AK_portfolio
-A portfolio website.
+A portfolio website. Made using HTML, CSS, & JavaScript.
